@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Día de la Mujer</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome (para íconos de redes) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- Enlazamos nuestro archivo CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <div class="container">
+    <!-- Sección lateral (side-content) -->
+    <div class="side-content">
+      <img src="images/logo.png" alt="Logo de 4B Consultores" class="logo">
+      <p class="slogan">
+        Hoy es un día especial, y en <strong>4B Consultores</strong> lo celebramos contigo.
+      </p>
+      
+      <!-- Bloque para compartir en redes (comentado) -->
+      <!--
+      <div class="share-section" id="shareSection">
+        <p>Comparte tu ramo en redes y etiquétanos <strong>@4BConsultores</strong></p>
+        <div class="social-icons">
+          <a href="https://twitter.com/intent/tweet?text=Feliz%20Día%20de%20la%20Mujer%20con%20@4BConsultores" 
+             target="_blank" class="social-button twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmi-sitio.com" 
+             target="_blank" class="social-button facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+      -->
+    </div>
+    
+    <!-- Sección principal (main-content) -->
+    <div class="main-content">
+      <!-- Tarjeta del formulario -->
+      <div class="form-container">
+        <h2>Fuerza, belleza e inspiración</h2>
+        <form id="flowerForm">
+          <label for="userName">Ingresa tu nombre:</label>
+          <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="userName" placeholder="Escribe tu nombre aquí" required>
+          </div>
+          
+          <label for="flowerType">Elige tu flor favorita:</label>
+          <div class="input-group">
+            <i class="fa-solid fa-seedling"></i>
+            <select id="flowerType">
+              <option value="" disabled selected>Seleccione una flor</option>
+              <option value="margarita">🌼 Margarita</option>
+              <option value="girasol">🌻 Girasol</option>
+              <option value="gerbera">🌺 Gerbera</option>
+            </select>
+          </div>
+          <button type="submit">Generar Ramo</button>
+        </form>
+      </div>
+      
+      <!-- Tarjeta del resultado (canvas) -->
+      <div class="result-container hidden" id="result">
+        <canvas id="flowerCanvas" width="1000" height="700"></canvas>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 Celebrando la Fuerza y Belleza de la Mujer. Todos los derechos reservados 4BConsultores.</p>
+  </footer>
+  
+  <!-- Enlazamos nuestro archivo JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
